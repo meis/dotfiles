@@ -81,6 +81,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Use vim as default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
