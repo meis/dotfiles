@@ -52,6 +52,8 @@ nnoremap <silent> <C-n> :set invnumber<CR>
 
 " Show/hide NERDTree
 nnoremap <silent> <C-t> :NERDTreeToggle<CR>
+" Locate current file in NERdTree
+nnoremap <silent> ,t :NERDTreeFind<CR>
 
 " Switching between windows in an easier way
 map <Tab> <C-W><C-W>
