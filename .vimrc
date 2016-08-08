@@ -3,6 +3,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree'
     " Collection of color schemes
     Plug 'flazz/vim-colorschemes'
+    " Status/tabline
+    Plug 'vim-airline/vim-airline'
     " Syntax checking
     Plug 'scrooloose/syntastic'
     " Full path fuzzy file, buffer, mru, tag, ... finder for Vim
@@ -36,6 +38,7 @@ set nobackup      " No backup (~) files
 set noswapfile    " No swap (.swp) files
 
 set nonumber      " Don't display number lines by default
+set laststatus=2  " Ensure Airline is displayed
 
 " Recommended synctastic settings
 set statusline+=%#warningmsg#
