@@ -12,7 +12,7 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 " Default colorscheme
-colorscheme railscasts
+colorscheme janah
 
 " Use filetype detection and file-based automatic indenting
 filetype plugin indent on
