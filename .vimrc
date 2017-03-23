@@ -11,6 +11,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'ctrlpvim/ctrlp.vim'
     " Perl syntax and helpers
     Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
+    " JavaScript syntax and helpers
+    Plug 'pangloss/vim-javascript'
+    " JSON syntax
+    Plug 'leshill/vim-json'
 call plug#end()
 
 " Default colorscheme
@@ -20,7 +24,7 @@ colorscheme janah
 filetype plugin indent on
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
-autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype perl setlocal ts=4 sts=4 sw=4
 
 set tabstop=4     " The width of a TAB is set to 4.
