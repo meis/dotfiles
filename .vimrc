@@ -1,4 +1,6 @@
 call plug#begin('~/.vim/plugged')
+    "Highlight trailing spaces
+    Plug 'ntpeters/vim-better-whitespace'
     " Visual file tree
     Plug 'scrooloose/nerdtree'
     " Collection of color schemes
