@@ -19,6 +19,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'leshill/vim-json'
 call plug#end()
 
+" Enforcing UTF-8 (some machines may not be properly configured) to display
+" airline characters
+set encoding=utf-8
+
 " Default colorscheme
 colorscheme janah
 
