@@ -50,6 +50,9 @@ set noswapfile    " No swap (.swp) files
 set nonumber      " Don't display number lines by default
 set laststatus=2  " Ensure Airline is displayed
 
+" Line marker at col 80
+set colorcolumn=80
+
 " Recommended synctastic settings
 set statusline+=%#warningmsg#
 set statusline+=%{exists('g:loaded_syntastic_plugin')?SyntasticStatuslineFlag():''}
