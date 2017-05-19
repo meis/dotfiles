@@ -107,3 +107,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 alias dc='docker-compose'
+# Top for Docker
+alias docker-top='docker run -ti --name docker-top --rm -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest'
+# Remove containers not used in the last 30 days
+alias docker-gc='docker run -ti --name docker-gc --rm -v /var/run/docker.sock:/var/run/docker.sock -e GRACE_PERIOD_SECONDS=2592000 spotify/docker-gc:latest'
