@@ -30,7 +30,7 @@ call plug#end()
 set encoding=utf-8
 
 " Default colorscheme
-colorscheme janah
+:silent! colorscheme janah
 
 " Use filetype detection and file-based automatic indenting
 filetype plugin indent on
