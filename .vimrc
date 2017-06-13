@@ -1,10 +1,16 @@
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+if empty($VIMHOME)
+  let $VIMHOME = $HOME. "/.vim"
+endif
+
+let &runtimepath = $VIMHOME . "," . &runtimepath
+
+if empty(glob("$VIMHOME/autoload/plug.vim"))
+  silent !curl -fLo $VIMHOME/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/.vim/plugged')
+call plug#begin("$VIMHOME/plugged")
     "Highlight trailing spaces
     Plug 'ntpeters/vim-better-whitespace'
     " Visual file tree
@@ -37,7 +43,7 @@ filetype plugin indent on
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
-autocmd Filetype perl setlocal ts=4 sts=4 sw=4
+autocmd Filetype perl setlocal ts=2 sts=2 sw=2
 
 set tabstop=2     " The width of a TAB is set to 2.
                   " Still it is a \t. It is just that
