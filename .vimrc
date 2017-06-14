@@ -1,5 +1,11 @@
+set nocp
+
 if empty($VIMHOME)
   let $VIMHOME = $HOME. "/.vim"
+endif
+
+if empty($MYVIMRC)
+  let $MYVIMRC = expand('<sfile>:p')
 endif
 
 let &runtimepath = $VIMHOME . "," . &runtimepath
