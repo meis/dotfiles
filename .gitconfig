@@ -5,3 +5,10 @@
   editor = vim
 [alias]
   tree = log --graph --decorate --pretty=oneline --abbrev-commit
+
+  # Clean branches that no longer exists in origin. This will not remove
+  # branches that were never in origin.
+  clean-orphan-branches="!git fetch -p && \
+    for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do \
+      git branch -D $branch; \
+    done"
