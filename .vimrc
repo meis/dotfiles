@@ -42,7 +42,8 @@ call plug#end()
 set encoding=utf-8
 
 " Default colorscheme
-:silent! colorscheme janah
+:silent! colorscheme gruvbox
+:silent! set background=dark
 
 " Use filetype detection and file-based automatic indenting
 filetype plugin indent on
