@@ -1,0 +1,22 @@
+#!/bin/bash
+# Electron dependency
+sudo apt install libgconf-2-4
+mkdir -p /tmp/Popcorn-Time/
+cd /tmp/Popcorn-Time/
+wget "https://get.popcorntime.sh/build/Popcorn-Time-0.3.10-Linux-64.tar.xz"
+tar xf Popcorn-Time-0.3.10-Linux-64.tar.xz
+rm Popcorn-Time-0.3.10-Linux-64.tar.xz
+mkdir -p ~/opt
+rm -rf ~/opt/Popcorn-Time
+mv /tmp/Popcorn-Time ~/opt/Popcorn-Time
+
+mkdir -p ~/.local/share/applications
+echo "[Desktop Entry]
+Name=Popcorn-Time
+Exec=$HOME/opt/Popcorn-Time/Popcorn-Time
+Type=Application
+StartupNotify=true
+Path=$HOME/opt/Popcorn-Time/
+Icon=$HOME/opt/Popcorn-Time/src/app/images/icon.png
+" > ~/.local/share/applications/PopcornTime.desktop
+chmod 755  ~/.local/share/applications/PopcornTime.desktop

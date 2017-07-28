@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo apt install wine-stable winetricks
+winetricks vcrun2015
+curl "https://eu.battle.net/download/getInstaller?os=win&installer=Hearthstone-Setup.exe" > /tmp/hearthstone.exe
+wine /tmp/hearthstone.exe
