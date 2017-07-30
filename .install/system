@@ -3,5 +3,6 @@ sudo apt install
   vim
   git
   ack-grep
+  faenza-icon-theme
   docker
   docker-compose
