@@ -109,3 +109,9 @@ command! Qa qa
 command! Q q
 command! W w
 command! Wq wq
+
+" Include overrides if the file exists
+let $OVERRIDE_FILE = $VIMHOME . '/vimrc.override'
+if filereadable($OVERRIDE_FILE)
+  source $OVERRIDE_FILE
+endif
