@@ -1,8 +1,9 @@
 #!/bin/bash
-sudo apt install
-  vim
-  git
-  ack-grep
-  faenza-icon-theme
-  docker
-  docker-compose
+sudo apt install \
+  vim \
+  git \
+  ack-grep \
+  docker \
+  docker-compose \
+  tint2 \
+  htop \
