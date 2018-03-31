@@ -1,5 +1,11 @@
 #!/bin/bash
 sudo apt install wine-stable winetricks
-winetricks vcrun2015
+export WINEARCH=win32
+wine wineboot
+winetricks win7
+winetricks -q vcrun2015
+winetricks dotnet40
+winetricks d3dx11
+wine wineboot
 curl "https://eu.battle.net/download/getInstaller?os=win&installer=Hearthstone-Setup.exe" > /tmp/hearthstone.exe
 wine /tmp/hearthstone.exe
