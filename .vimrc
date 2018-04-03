@@ -33,6 +33,8 @@ call plug#begin("$VIMHOME/plugged")
     Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
     " JavaScript syntax and helpers
     Plug 'pangloss/vim-javascript'
+    " Vue syntax
+    Plug 'posva/vim-vue'
     " JSON syntax
     Plug 'leshill/vim-json'
 call plug#end()
@@ -47,6 +49,7 @@ set encoding=utf-8
 
 " Use filetype detection and file-based automatic indenting
 filetype plugin indent on
+syntax enable
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
