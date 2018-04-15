@@ -111,3 +111,6 @@ alias dc='docker-compose'
 alias docker-top='docker run -ti --name docker-top --rm -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest'
 # Remove containers not used in the last 30 days
 alias docker-gc='docker run -ti --name docker-gc --rm -v /var/run/docker.sock:/var/run/docker.sock -e GRACE_PERIOD_SECONDS=2592000 spotify/docker-gc:latest'
+# drun container-name command
+alias drun='docker run --rm -ti -v $(pwd):/work -w /work -u $(id -u):$(id -g)'
+alias sudo-drun='docker run --rm -ti -v $(pwd):/work -w /work -u root'
