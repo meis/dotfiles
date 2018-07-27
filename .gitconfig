@@ -12,5 +12,8 @@
     for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do \
       git branch -D $branch; \
     done"
+
+  update-from-upstream="!git fetch upstream && \
+    git merge upstream/$(git rev-parse --abbrev-ref HEAD)"
 [include]
   path = ~/.gitconfig.override
