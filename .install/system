@@ -1,9 +1,11 @@
 #!/bin/bash
-sudo apt install \
-  vim \
-  git \
-  ack-grep \
-  docker \
-  docker-compose \
-  tint2 \
-  htop \
+sudo apt install -y \
+ vim \
+ git \
+ ack-grep \
+ htop \
+ fonts-hack \
+ fonts-firacode \
+ jq
+
+# sudo apt install -y tint2
