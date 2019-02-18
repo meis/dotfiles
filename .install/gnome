@@ -1,0 +1,19 @@
+#!/bin/sh
+
+sudo apt install --yes gnome-shell gnome-shell-extensions
+
+wget -O gnome-shell-extension-installer \
+  "https://github.com/meis/gnome-shell-extension-installer/raw/master/gnome-shell-extension-installer"
+chmod +x gnome-shell-extension-installer
+sudo mv gnome-shell-extension-installer /usr/bin/
+
+version=`gnome-shell --version | cut -d ' ' -f 3 | cut -d . -f 1,2`
+
+gnome-shell-extension-installer \
+  1401 `# Bluetooth quick connect, by bjarosze` \
+  $version --update --yes --restart-shell
+
+dconf write /org/gnome/desktop/interface/clock-show-date true
+dconf write /org/gnome/desktop/peripherals/touchpad/natural-scroll false
+dconf write /org/gnome/desktop/peripherals/touchpad/tap-to-click true
+
