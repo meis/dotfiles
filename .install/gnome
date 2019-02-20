@@ -10,7 +10,8 @@ sudo mv gnome-shell-extension-installer /usr/bin/
 version=`gnome-shell --version | cut -d ' ' -f 3 | cut -d . -f 1,2`
 
 gnome-shell-extension-installer \
-  1401 `# Bluetooth quick connect, by bjarosze` \
+  1401 `# https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/` \
+  15 `# https://extensions.gnome.org/extension/15/alternatetab/` \
   $version --update --yes --restart-shell
 
 dconf write /org/gnome/desktop/interface/clock-show-date true
