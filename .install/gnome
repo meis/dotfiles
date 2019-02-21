@@ -14,9 +14,9 @@ gnome-shell-extension-installer \
   15 `# https://extensions.gnome.org/extension/15/alternatetab/` \
   $version --update --yes --restart-shell
 
-dconf write /org/gnome/desktop/interface/clock-show-date true
-dconf write /org/gnome/desktop/input-sources/sources "[('xkb', 'us+altgr-intl'), ('xkb', 'es')]"
-dconf write /org/gnome/desktop/input-sources/mru-sources "[('xkb', 'us+altgr-intl'), ('xkb', 'es')]"
-dconf write /org/gnome/desktop/peripherals/touchpad/natural-scroll false
-dconf write /org/gnome/desktop/peripherals/touchpad/tap-to-click true
-
+gsettings set org.gnome.desktop.interface clock-sho-date true
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us+altgr-intl'), ('xkb', 'es')]"
+gsettings set org.gnome.desktop.sound input-feedback-sounds false
+gsettings set org.gnome.desktop.sound event-sounds false
+gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
+gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
