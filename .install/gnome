@@ -12,6 +12,7 @@ version=`gnome-shell --version | cut -d ' ' -f 3 | cut -d . -f 1,2`
 gnome-shell-extension-installer \
   1401 `# https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/` \
   15 `# https://extensions.gnome.org/extension/15/alternatetab/` \
+  1160 `# https://extensions.gnome.org/extension/1160/dash-to-panel/` \
   $version --update --yes --restart-shell
 
 gsettings set org.gnome.desktop.interface clock-show-date true
@@ -20,3 +21,30 @@ gsettings set org.gnome.desktop.sound input-feedback-sounds false
 gsettings set org.gnome.desktop.sound event-sounds false
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
+
+echo "
+[/]
+group-apps=true
+group-apps-use-launchers=false
+shift-click-action='MINIMIZE'
+shift-middle-click-action='LAUNCH'
+group-apps-label-font-weight='inherit'
+click-action='RAISE'
+group-apps-label-max-width=160
+dot-style-focused='SQUARES'
+location-clock='STATUSRIGHT'
+multi-monitors=false
+group-apps-label-font-color='#dddddd'
+group-apps-label-font-size=14
+dot-style-unfocused='METRO'
+group-apps-underline-unfocused=true
+show-favorites=true
+panel-size=48
+hotkeys-overlay-combo='TEMPORARILY'
+show-show-apps-button=false
+show-showdesktop-button=false
+show-window-previews=true
+group-apps-use-fixed-width=true
+middle-click-action='QUIT'
+isolate-workspaces=false
+" | dconf load /org/gnome/shell/extensions/dash-to-panel/
