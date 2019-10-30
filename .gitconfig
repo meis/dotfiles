@@ -17,3 +17,5 @@
     git merge upstream/$(git rev-parse --abbrev-ref HEAD)"
 [include]
   path = ~/.gitconfig.override
+[diff]
+	noprefix = true
