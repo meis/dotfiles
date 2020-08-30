@@ -1,0 +1,13 @@
+{
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "window.zoomLevel": 0,
+    "editor.renderWhitespace": "boundary",
+    "telemetry.enableTelemetry": false,
+    "breadcrumbs.enabled": true,
+    "files.enableTrash": false,
+    "go.toolsGopath": "~/.local/share/go",
+    "go.gopath": "~/.local/share/go",
+    "editor.tabSize": 2,
+}
