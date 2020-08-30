@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt install -y \
+sudo apt update && sudo apt install -y \
  vim \
  git \
  ack-grep \
