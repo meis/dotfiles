@@ -1,11 +1,13 @@
 #!/bin/bash
 # Electron dependency
 sudo apt install libgconf-2-4
+VERSION=0.4.4
+FILE_NAME=Popcorn-Time-$VERSION-linux64.zip
 mkdir -p /tmp/Popcorn-Time/
 cd /tmp/Popcorn-Time/
-wget "https://get.popcorntime.sh/build/Popcorn-Time-0.3.10-Linux-64.tar.xz"
-tar xf Popcorn-Time-0.3.10-Linux-64.tar.xz
-rm Popcorn-Time-0.3.10-Linux-64.tar.xz
+wget "https://github.com/popcorn-official/popcorn-desktop/releases/download/v$VERSION/$FILE_NAME"
+unzip $FILE_NAME
+rm $FILE_NAME
 mkdir -p ~/opt
 rm -rf ~/opt/Popcorn-Time
 mv /tmp/Popcorn-Time ~/opt/Popcorn-Time
