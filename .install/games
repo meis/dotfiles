@@ -1,0 +1,13 @@
+#!/bin/sh
+sudo add-apt-repository ppa:lutris-team/lutris
+sudo apt update
+sudo apt install lutris
+
+#Hearthstone deps usually installes with lutris
+sudo apt install libgnutls30:i386 libldap-2.4-2:i386 libgpg-error0:i386 libsqlite3-0:i386
+sudo dpkg --add-architecture i386
+sudo apt install libgl1-mesa-dri:i386
+sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
+
+# fix Hearthstone (https://lutris.net/games/hearthstone/)
+rm "~/Games/hearthstone/drive_c/Program Files (x86)/Hearthstone/Hearthstone_Data/Plugins/LocationAPI.dll"
