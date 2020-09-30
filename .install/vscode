@@ -2,3 +2,4 @@
 
 sudo snap install --classic code
 code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension ybaumes.highlight-trailing-white-spaces
