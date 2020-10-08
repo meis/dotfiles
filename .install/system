@@ -6,6 +6,8 @@ sudo apt update && sudo apt install -y \
  htop \
  fonts-hack \
  fonts-firacode \
+ net-tools \
+ build-essential \
  jq
 
 # sudo apt install -y tint2
