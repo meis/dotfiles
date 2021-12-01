@@ -36,5 +36,12 @@
     "rust-client.channel": "stable",
     "[rust]": {
         "editor.defaultFormatter": "rust-lang.rust"
-    }
+    },
+    "[python]": {
+        "editor.tabSize": 4
+    },
+    "python.venvFolders": [
+        "~/.cache/pypoetry/virtualenvs"
+    ],
+    "window.zoomLevel": 1.2
 }
