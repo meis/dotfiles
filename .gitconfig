@@ -3,6 +3,7 @@
   email = marc.egea.sala@gmail.com
 [core]
   editor = vim
+  excludesFile = ~/.gitignore_global
 [alias]
   tree = log --graph --decorate --pretty=oneline --abbrev-commit
 
