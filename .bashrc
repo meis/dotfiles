@@ -117,3 +117,5 @@ alias docker-gc='docker run -ti --name docker-gc --rm -v /var/run/docker.sock:/v
 # drun container-name command
 alias drun='docker run --rm -ti --init -v $(pwd):/work -w /work -u $(id -u):$(id -g)'
 alias sudo-drun='docker run --rm --init -ti -v $(pwd):/work -w /work -u root'
+
+alias duall='du -hs .[^.]* *'
