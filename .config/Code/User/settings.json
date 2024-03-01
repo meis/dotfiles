@@ -23,7 +23,7 @@
         "editor.insertSpaces": false,
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true
+            "source.organizeImports": "explicit"
         },
         "editor.suggest.snippetsPreventQuickSuggestions": false
     },
@@ -38,10 +38,19 @@
         "editor.defaultFormatter": "rust-lang.rust"
     },
     "[python]": {
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "charliermarsh.ruff"
     },
     "python.venvFolders": [
         "~/.cache/pypoetry/virtualenvs"
     ],
-    "window.zoomLevel": 1.2
+    "window.zoomLevel": 1.2,
+    "editor.stickyScroll.enabled": false,
+    "git.openRepositoryInParentFolders": "never",
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "editor.minimap.renderCharacters": false,
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "vetur.ignoreProjectWarning": true
 }
