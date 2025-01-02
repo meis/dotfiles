@@ -1,6 +1,6 @@
 [user]
   name = Marc Egea i Sala
-  email = marc.egea.sala@gmail.com
+  email = git@meis.dev
 [core]
   editor = vim
   excludesFile = ~/.gitignore_global
