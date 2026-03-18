@@ -1,13 +1,13 @@
 #!/bin/bash
 sudo apt update && sudo apt install -y \
+ curl \
  vim \
  git \
  ack-grep \
  htop \
- fonts-hack \
- fonts-firacode \
  net-tools \
  build-essential \
+ fonts-jetbrains-mono \
  jq
 
 # sudo apt install -y tint2
