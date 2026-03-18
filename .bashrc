@@ -109,7 +109,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # Track dotfiles with git
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-alias dc='docker-compose'
+alias dc='docker compose'
 # Top for Docker
 alias docker-top='docker run -ti --name docker-top --rm -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest'
 # Remove containers not used in the last 30 days
@@ -119,3 +119,5 @@ alias drun='docker run --rm -ti --init -v $(pwd):/work -w /work -u $(id -u):$(id
 alias sudo-drun='docker run --rm --init -ti -v $(pwd):/work -w /work -u root'
 
 alias duall='du -hs .[^.]* *'
+
+
