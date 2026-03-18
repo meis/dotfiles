@@ -26,6 +26,8 @@ gsettings set org.gnome.desktop.sound input-feedback-sounds false
 gsettings set org.gnome.desktop.sound event-sounds false
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-tiling-popup false
+gsettings set org.gnome.shell.extensions.dash-to-dock show-icons-emblems false
 
 echo "
 [/]
