@@ -4,6 +4,8 @@
 [core]
   editor = vim
   excludesFile = ~/.gitignore_global
+[init]
+  defaultBranch = master
 [alias]
   tree = log --graph --decorate --pretty=oneline --abbrev-commit
 
